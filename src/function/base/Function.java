@@ -1,8 +1,20 @@
 package function.base;
+/*
+ * 函数的顶级父类
+ *
+ */
 public abstract class Function {
 	
+	/*
+	 * 判断当前点是否满足函数
+	 */
 	public abstract boolean isOnGraph(int x,int y);
 	
+	/**
+	 * 画出图像
+	 * @param canvas
+	 * @return
+	 */
 	public int[][] drawGraph(int[][] canvas){
 		int height=canvas.length;
 		int width=canvas[0].length;
